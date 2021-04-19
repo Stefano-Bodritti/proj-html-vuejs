@@ -58,8 +58,7 @@ body {
 
 header {
   background-image: url("../img/bg-img.jpg");
-  height: 500px;
-  padding-top: 20px;
+  padding: 15px 0;
   font-size: 12px;
   color: #ffffff;
   text-transform: uppercase;
@@ -98,6 +97,39 @@ header .container .menu_right .cart_container .cart_number {
   line-height: 12px;
   padding-left: 4px;
   vertical-align: middle;
+}
+header .hero {
+  background-image: url("../img/h3-rev-img-5.png");
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position: center 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  overflow-x: hidden;
+}
+header .hero img {
+  height: 400px;
+}
+header .hero .half_circle {
+  color: #d2401e;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  padding-top: 10px;
+  cursor: pointer;
+}
+header .hero .half_circle.prev {
+  right: 30px;
+  transform: rotateZ(90deg);
+}
+header .hero .half_circle.next {
+  left: 30px;
+  transform: rotateZ(-90deg);
 }
 
 .btn_orange {

@@ -1,12 +1,12 @@
 header {
   background-image: url("../img/bg-img.jpg");
-  height: 500px;
-  padding-top: 20px;
+  padding: 15px 0;
   font-size: $font_small;
   color: $primary_white;
   text-transform: uppercase;
   letter-spacing: .2em;
 
+  // header top
   .container {
     display: flex;
     justify-content: space-between;
@@ -45,6 +45,45 @@ header {
           padding-left: 4px;
           vertical-align: middle;
         }
+      }
+    }
+  }
+
+  // hero
+  .hero {
+    background-image: url("../img/h3-rev-img-5.png");
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: center 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    overflow-x: hidden;
+
+    img {
+      height: 400px;
+    }
+
+    .half_circle {
+      color: $orange;
+      background-color: white;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      text-align: center;
+      position: relative;
+      padding-top: 10px;
+      cursor: pointer;
+
+      &.prev {
+        right: 30px;
+        transform: rotateZ(90deg);
+      }
+
+      &.next {
+        left: 30px;
+        transform: rotateZ(-90deg);
       }
     }
   }
