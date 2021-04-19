@@ -132,6 +132,50 @@ header .hero .half_circle.next {
   transform: rotateZ(-90deg);
 }
 
+#images {
+  display: flex;
+}
+#images .image_container {
+  width: 25%;
+  padding: 0 3px;
+  position: relative;
+  overflow: hidden;
+}
+#images .image_container img {
+  width: 100%;
+}
+#images .image_container .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(#d1d4d8 1px, white 1px);
+  background-size: 8px 8px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#images .image_container .cover .orange_circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #d2401e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#images .image_container .cover .orange_circle i {
+  color: white;
+}
+#images .image_container:hover img {
+  opacity: 0;
+}
+#images .image_container:hover .cover {
+  opacity: 1;
+}
+
 .btn_orange {
   background-color: #d2401e;
   color: white;
