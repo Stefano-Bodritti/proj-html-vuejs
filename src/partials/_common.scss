@@ -16,3 +16,32 @@ body {
     max-width: $container_small;
   }
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.half_circle {
+  color: $orange;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  padding-top: 10px;
+  cursor: pointer;
+  font-size: $font_small;
+  letter-spacing: .2em;
+
+  &.prev {
+    right: 30px;
+    transform: rotateZ(90deg);
+  }
+
+  &.next {
+    left: 30px;
+    transform: rotateZ(-90deg);
+  }
+}

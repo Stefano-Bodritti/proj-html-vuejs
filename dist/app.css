@@ -16,6 +16,33 @@ body {
   max-width: 800px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.half_circle {
+  color: #d2401e;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  padding-top: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+}
+.half_circle.prev {
+  right: 30px;
+  transform: rotateZ(90deg);
+}
+.half_circle.next {
+  left: 30px;
+  transform: rotateZ(-90deg);
+}
+
 .mt-5 {
   margin-top: 5px;
 }
@@ -112,25 +139,6 @@ header .hero {
 header .hero img {
   height: 400px;
 }
-header .hero .half_circle {
-  color: #d2401e;
-  background-color: white;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  text-align: center;
-  position: relative;
-  padding-top: 10px;
-  cursor: pointer;
-}
-header .hero .half_circle.prev {
-  right: 30px;
-  transform: rotateZ(90deg);
-}
-header .hero .half_circle.next {
-  left: 30px;
-  transform: rotateZ(-90deg);
-}
 
 #images {
   display: flex;
@@ -174,6 +182,45 @@ header .hero .half_circle.next {
 }
 #images .image_container:hover .cover {
   opacity: 1;
+}
+
+#slogan {
+  background-image: url("../img/h3-testimonials-bckgrnd.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 80px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+#slogan .slogan_center {
+  width: 40%;
+}
+#slogan .slogan_center .quotes {
+  color: #b7903c;
+  font-size: 50px;
+}
+#slogan .slogan_center h3 {
+  color: #2d2d2d;
+  font-weight: 500;
+}
+#slogan .slogan_center p {
+  color: #d2401e;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+}
+#slogan .slogan_center .bullets i {
+  cursor: pointer;
+  margin: 0 5px;
+  color: #e4e4d4;
+  font-size: 12px;
+}
+#slogan .slogan_center .bullets i.active {
+  color: #b7903c;
 }
 
 .btn_orange {

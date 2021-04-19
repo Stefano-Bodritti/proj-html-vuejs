@@ -49,3 +49,47 @@
     }
   }
 }
+
+#slogan {
+  background-image: url("../img/h3-testimonials-bckgrnd.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 80px 0;
+  text-transform: uppercase;
+  text-align: center;
+
+  .slogan_center {
+    width: 40%;
+
+    .quotes {
+      color: $light_brown;
+      font-size: 50px;
+    }
+
+    h3 {
+      color: $primary_dark;
+      font-weight: 500;
+    }
+
+    p {
+      color: $orange;
+      font-size: $font_small;
+      letter-spacing: $spacing_large;
+      font-weight: 500;
+    }
+
+    .bullets i {
+      cursor: pointer;
+      margin: 0 5px;
+      color: $bullets_grey;
+      font-size: $font_small;
+      &.active {
+        color: $light_brown;
+      }
+    }
+  }
+}

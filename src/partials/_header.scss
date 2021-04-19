@@ -4,7 +4,7 @@ header {
   font-size: $font_small;
   color: $primary_white;
   text-transform: uppercase;
-  letter-spacing: .2em;
+  letter-spacing: $spacing_large;
 
   // header top
   .container {
@@ -63,28 +63,6 @@ header {
 
     img {
       height: 400px;
-    }
-
-    .half_circle {
-      color: $orange;
-      background-color: white;
-      height: 60px;
-      width: 60px;
-      border-radius: 50%;
-      text-align: center;
-      position: relative;
-      padding-top: 10px;
-      cursor: pointer;
-
-      &.prev {
-        right: 30px;
-        transform: rotateZ(90deg);
-      }
-
-      &.next {
-        left: 30px;
-        transform: rotateZ(-90deg);
-      }
     }
   }
 }
