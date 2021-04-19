@@ -1,0 +1,5 @@
+@for $i from 1 through 10 {
+  .mt-#{5 * $i} {
+    margin-top: 5px * $i;
+  }
+}
