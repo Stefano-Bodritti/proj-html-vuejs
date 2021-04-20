@@ -10,6 +10,7 @@ body {
 
 h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 }
 
 ul {
@@ -292,7 +293,6 @@ header .hero img {
   float: left;
 }
 #specials .specials_list .description h4 {
-  text-transform: uppercase;
   font-size: 25px;
   font-weight: 500;
 }
@@ -326,6 +326,56 @@ header .hero img {
 #puzzle .cropped.third_image {
   height: 100px;
   background-position: center 65%;
+}
+
+#workers {
+  display: flex;
+}
+#workers .box {
+  width: 25%;
+  position: relative;
+}
+#workers .box img {
+  width: 100%;
+  display: block;
+}
+#workers .box img:hover {
+  opacity: 0;
+}
+#workers .box .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(#d1d4d8 1px, white 1px);
+  background-size: 8px 8px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#workers .box .cover:hover {
+  opacity: 1;
+}
+#workers .box .cover .box_orange {
+  background-color: #d2401e;
+  width: 90%;
+  height: 90%;
+  text-align: center;
+  color: #ffffff;
+  padding: 110px 0;
+}
+#workers .box .cover .box_orange h5 {
+  font-size: 25px;
+  font-weight: 500;
+}
+#workers .box .cover .box_orange p {
+  font-size: 14px;
+}
+#workers .box .cover .box_orange a {
+  margin: 0 5px;
+  font-size: 12px;
 }
 
 .btn_orange {

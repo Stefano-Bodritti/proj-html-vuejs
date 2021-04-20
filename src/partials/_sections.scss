@@ -13,17 +13,7 @@
     }
 
     .cover {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-image: radial-gradient(#d1d4d8 1px, white 1px);
-      background-size: 8px 8px;
-      opacity: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex_hover;
 
       .orange_circle {
         width: 50px;
@@ -139,7 +129,6 @@
       float: left;
 
       h4 {
-        text-transform: uppercase;
         font-size: $font_big;
         font-weight: 500;
       }
@@ -182,4 +171,53 @@
       background-position: center 65%;
     }
   }
+}
+
+#workers {
+  display: flex;
+
+  .box {
+    width: 25%;
+    position: relative;
+
+    img {
+      width: 100%;
+      display: block;
+      &:hover {
+        opacity: 0;
+      }
+    }
+
+    .cover {
+      @include flex_hover;
+      &:hover {
+        opacity: 1;
+      }
+
+      .box_orange {
+        background-color: $orange;
+        width: 90%;
+        height: 90%;
+        text-align: center;
+        color: $primary_white;
+        padding: 110px 0;
+
+        h5 {
+          font-size: $font_big;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: $font_medium;
+        }
+
+        a {
+          margin: 0 5px;
+          font-size: $font_small;
+        }
+      }
+    }
+
+  }
+
 }
