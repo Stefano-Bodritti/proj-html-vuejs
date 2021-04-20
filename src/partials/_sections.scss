@@ -217,7 +217,19 @@
         }
       }
     }
+  }
+}
+
+#partners {
+  background-color: $light_grey;
+
+  .container {
+    display: flex;
+    padding: 80px 0;
+
+    img {
+      width: 20%;
+    }
 
   }
-
 }
