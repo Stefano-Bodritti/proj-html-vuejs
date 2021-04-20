@@ -27,7 +27,7 @@ h2, h3, h4 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 45px;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -291,6 +291,34 @@ header .hero img {
 }
 #specials .specials_list .description p {
   font-size: 14px;
+}
+
+#puzzle .cropped {
+  background-image: url("../img/h3-background-img.jpg");
+  background-size: 87%;
+  background-repeat: repeat-x;
+}
+#puzzle .cropped.first_image {
+  height: 100px;
+  background-position: bottom center;
+}
+#puzzle .cropped.second_image {
+  height: 235px;
+  background-position: top center;
+  position: relative;
+}
+#puzzle .cropped.second_image h2 {
+  color: white;
+  width: 300px;
+  font-size: 45px;
+  line-height: 52px;
+  position: absolute;
+  top: -15px;
+  left: 330px;
+}
+#puzzle .cropped.third_image {
+  height: 100px;
+  background-position: center 65%;
 }
 
 .btn_orange {

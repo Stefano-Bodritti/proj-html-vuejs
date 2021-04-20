@@ -150,3 +150,36 @@
     }
   }
 }
+
+#puzzle {
+  .cropped {
+    background-image: url("../img/h3-background-img.jpg");
+    background-size: 87%;
+    background-repeat: repeat-x;
+
+    &.first_image {
+      height: 100px;
+      background-position: bottom center;
+    }
+
+    &.second_image {
+      height: 235px;
+      background-position: top center;
+      position: relative;
+      h2 {
+        color: white;
+        width: 300px;
+        font-size: $font_bigger;
+        line-height: 52px;
+        position: absolute;
+        top: -15px;
+        left: 330px;
+      }
+    }
+
+    &.third_image {
+      height: 100px;
+      background-position: center 65%;
+    }
+  }
+}
