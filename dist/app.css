@@ -5,7 +5,17 @@
 }
 
 body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h2, h3, h4 {
   font-family: "Oswald", sans-serif;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
 }
 
 .container {
@@ -16,9 +26,19 @@ body {
   max-width: 800px;
 }
 
+h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+section {
+  margin: 5px 0;
 }
 
 .half_circle {
@@ -84,6 +104,7 @@ a {
 }
 
 header {
+  font-family: "Oswald", sans-serif;
   background-image: url("../img/bg-img.jpg");
   padding: 15px 0;
   font-size: 12px;
@@ -151,6 +172,7 @@ header .hero img {
 }
 #images .image_container img {
   width: 100%;
+  display: block;
 }
 #images .image_container .cover {
   position: absolute;
@@ -185,6 +207,7 @@ header .hero img {
 }
 
 #slogan {
+  font-family: "Oswald", sans-serif;
   background-image: url("../img/h3-testimonials-bckgrnd.jpg");
   background-position: center;
   background-size: cover;
@@ -221,6 +244,53 @@ header .hero img {
 }
 #slogan .slogan_center .bullets i.active {
   color: #b7903c;
+}
+
+#specials {
+  display: flex;
+  align-items: center;
+  height: 600px;
+}
+#specials .image_container {
+  height: 100%;
+  width: 50%;
+  background-image: url("../img/h1-img-4.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#specials .image_container img {
+  width: 40%;
+}
+#specials .specials_list {
+  padding: 80px 150px;
+  width: 50%;
+  color: #2d2d2d;
+}
+#specials .specials_list p {
+  color: #a6a6a6;
+}
+#specials .specials_list .cost {
+  float: left;
+  width: 15%;
+  color: #d2401e;
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+#specials .specials_list .description {
+  width: 85%;
+  float: left;
+}
+#specials .specials_list .description h4 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 500;
+}
+#specials .specials_list .description p {
+  font-size: 14px;
 }
 
 .btn_orange {

@@ -1,11 +1,23 @@
+// Reset
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+// Mix
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: $primary_font;
+}
+
+h2, h3, h4 {
+  font-family: $secondary_font;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
 }
 
 .container {
@@ -17,9 +29,19 @@ body {
   }
 }
 
+h2 {
+  font-size: $font_bigger;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+section {
+  margin: 5px 0;
 }
 
 .half_circle {
