@@ -233,3 +233,63 @@
 
   }
 }
+
+#pizzas {
+  text-align: center;
+  padding: 100px 0;
+
+  h6 {
+    color: $orange;
+    font-size: $font_small;
+    font-weight: 400;
+    letter-spacing: $spacing_large;
+  }
+
+  h2 {
+    color: $primary_dark;
+    font-size: $font_more_big;
+  }
+
+  p {
+    color: $dark_grey;
+  }
+
+  .pizza_show {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    font-family: $secondary_font;
+    font-weight: 500;
+    font-size: $font_medium;
+
+    .pizza_item {
+      width: 19.5%;
+      &.first {
+        margin-left: -7%;
+      }
+      &.last {
+        margin-right: -7%;
+      }
+
+      img {
+        width: 62%;
+      }
+    }
+
+    .pizza_name {
+      text-transform: uppercase;
+      color: $light_brown;
+    }
+
+    .pizza_price {
+      color: $orange;
+
+      .discount {
+        text-decoration: line-through;
+        color: $medium_grey;
+      }
+    }
+  }
+
+}

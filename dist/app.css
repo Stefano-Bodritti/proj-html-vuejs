@@ -31,7 +31,7 @@ ul.list_inline li {
   max-width: 1080px;
 }
 .container.container_small {
-  max-width: 800px;
+  max-width: 600px;
 }
 
 h2 {
@@ -387,6 +387,56 @@ header .hero img {
 }
 #partners .container img {
   width: 20%;
+}
+
+#pizzas {
+  text-align: center;
+  padding: 100px 0;
+}
+#pizzas h6 {
+  color: #d2401e;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+}
+#pizzas h2 {
+  color: #2d2d2d;
+  font-size: 35px;
+}
+#pizzas p {
+  color: #767676;
+}
+#pizzas .pizza_show {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+#pizzas .pizza_show .pizza_item {
+  width: 19.5%;
+}
+#pizzas .pizza_show .pizza_item.first {
+  margin-left: -7%;
+}
+#pizzas .pizza_show .pizza_item.last {
+  margin-right: -7%;
+}
+#pizzas .pizza_show .pizza_item img {
+  width: 62%;
+}
+#pizzas .pizza_show .pizza_name {
+  text-transform: uppercase;
+  color: #b7903c;
+}
+#pizzas .pizza_show .pizza_price {
+  color: #d2401e;
+}
+#pizzas .pizza_show .pizza_price .discount {
+  text-decoration: line-through;
+  color: #a6a6a6;
 }
 
 .btn_orange {
