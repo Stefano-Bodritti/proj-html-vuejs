@@ -35,7 +35,7 @@ ul.list_inline li {
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 35px;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -456,6 +456,75 @@ header .hero .half_circle {
 #pizzas .pizza_show .pizza_price .discount {
   text-decoration: line-through;
   color: #a6a6a6;
+}
+
+#events {
+  display: flex;
+}
+#events .events_list {
+  width: 50%;
+  height: 100%;
+  padding: 40px 120px;
+  background-image: url("../img/bg-img.jpg");
+  font-family: "Oswald", sans-serif;
+}
+#events .events_list .love {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: #d2401e;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#events .events_list h2 {
+  color: #ffffff;
+}
+#events .events_list .event {
+  padding: 30px 0;
+}
+#events .events_list .event:not(:last-child) {
+  border-bottom: 2px dotted #b7903c;
+}
+#events .events_list .date {
+  float: left;
+  width: 17%;
+}
+#events .events_list .date .day {
+  font-size: 45px;
+  color: #d2401e;
+  font-weight: 600;
+  line-height: 45px;
+}
+#events .events_list .date .month {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 4px;
+}
+#events .events_list .place {
+  float: left;
+  width: 83%;
+}
+#events .events_list .place h4 {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.4em;
+}
+#events .events_list .place .address {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #d2401e;
+}
+#events .events_list .place .address i {
+  margin-right: 5px;
+}
+#events .image_container {
+  width: 50%;
+}
+#events .image_container img {
+  width: 100%;
+  display: block;
 }
 
 .btn_orange {

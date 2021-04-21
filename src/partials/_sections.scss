@@ -291,5 +291,86 @@
       }
     }
   }
+}
 
+#events {
+  display: flex;
+
+  .events_list {
+    width: 50%;
+    height: 100%;
+    padding: 40px 120px;
+    background-image: url("../img/bg-img.jpg");
+    font-family: $secondary_font;
+
+    .love {
+      font-size: $font_small;
+      letter-spacing: $spacing_large;
+      color: $orange;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      color: $primary_white;
+    }
+
+    .event {
+      padding: 30px 0;
+      &:not(:last-child) {
+        border-bottom: 2px dotted $light_brown;
+      }
+    }
+
+    .date {
+      float: left;
+      width: 17%;
+
+      .day {
+        font-size: $font_bigger;
+        color: $orange;
+        font-weight: 600;
+        line-height: $font_bigger;
+      }
+
+      .month {
+        font-size: $font_big;
+        color: $primary_white;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-left: 4px;
+      }
+    }
+
+    .place {
+      float: left;
+      width: 83%;
+
+      h4 {
+        font-size: $font_big;
+        color: $primary_white;
+        font-weight: 500;
+        line-height: 1.4em;
+      }
+
+      .address {
+        font-family: $primary_font;
+        font-size: $font_small;
+        color: $orange;
+
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .image_container {
+    width: 50%;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
 }
