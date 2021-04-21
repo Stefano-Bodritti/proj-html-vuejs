@@ -23,9 +23,23 @@
         <div class="header_top">
           <div class="container">
             <button class="btn_orange" type="button" name="button">order online</button>
-            <div>placeholder menu left</div>
+            <ul class="list_inline nav nav_left">
+              <li v-for="item in navLeft">
+                <a :href="item.link">
+                  <img v-if="item.image != ''" :src="item.image" :alt="item.name">
+                  {{ item.name }}
+                </a>
+              </li>
+            </ul>
             <div class="logo"><img src="img/h5-logo-divided-header.png" alt="Logo"></div>
-            <div>placeholder menu right</div>
+            <ul class="list_inline nav nav_right">
+              <li v-for="item in navRight">
+                <a :href="item.link">
+                  <img v-if="item.image != ''" :src="item.image" :alt="item.name">
+                  {{ item.name }}
+                </a>
+              </li>
+            </ul>
             <div class="menu_right">
               <a href="#" class="cart_container">
                 <div class="cart_number">0</div>

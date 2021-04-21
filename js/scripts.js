@@ -46,6 +46,40 @@ var app = new Vue(
           link: "https://www.linkedin.com"
         },
       ],
+      navLeft: [
+        {
+          name: "Home",
+          link: "#",
+          image: "svg/svg-0.svg"
+        },
+        {
+          name: "Pages",
+          link: "#",
+          image: ""
+        },
+        {
+          name: "Menu",
+          link: "#",
+          image: ""
+        },
+      ],
+      navRight: [
+        {
+          name: "Event",
+          link: "#",
+          image: ""
+        },
+        {
+          name: "Blog",
+          link: "#",
+          image: ""
+        },
+        {
+          name: "Landing",
+          link: "#",
+          image: ""
+        },
+      ],
     },
 
   }

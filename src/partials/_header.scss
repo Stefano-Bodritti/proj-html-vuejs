@@ -21,6 +21,25 @@ header {
       }
     }
 
+    .nav {
+      display: flex;
+      &.nav_left {
+        margin-right: -5%;
+      }
+      &.nav_right {
+        margin-left: -5%;
+      }
+
+      li {
+        margin: 0 15px;
+
+        img {
+          filter: invert(100%);
+          height: 9px;
+        }
+      }
+    }
+
     .menu_right {
       img {
         filter: invert(100%);
@@ -64,6 +83,10 @@ header {
 
     img {
       height: 400px;
+    }
+
+    .half_circle {
+      bottom: 30px;
     }
   }
 }
