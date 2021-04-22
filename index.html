@@ -152,61 +152,16 @@
         <!-- fine sezione puzzle -->
         <!-- sezione workers -->
         <section id="workers">
-          <div class="box">
-            <img src="img/h1-team-1a-700x700.jpg" alt="Peter">
+          <div v-for="worker in workers" class="box">
+            <img :src="worker.image" :alt="worker.name">
             <div class="cover">
               <div class="box_orange">
-                <h5>Peter Anderson</h5>
-                <p class="mt-5">Head Chef</p>
+                <h5>{{ worker.name }}</h5>
+                <p class="mt-5">{{ worker.job }}</p>
                 <div class="socials mt-10">
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="box">
-            <img src="img/h1-team-2a.jpg" alt="Sharon">
-            <div class="cover">
-              <div class="box_orange">
-                <h5>Sharon Hayes</h5>
-                <p class="mt-5">Executive Chef</p>
-                <div class="socials mt-10">
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="box">
-            <img src="img/h1-team-4a.jpg" alt="Frank">
-            <div class="cover">
-              <div class="box_orange">
-                <h5>Frank Bailey</h5>
-                <p class="mt-5">Kitchen Porter</p>
-                <div class="socials mt-10">
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="box">
-            <img src="img/h1-team-3a.jpg" alt="Carol">
-            <div class="cover">
-              <div class="box_orange">
-                <h5>Carol Simpson</h5>
-                <p class="mt-5">Sous Chef</p>
-                <div class="socials mt-10">
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a :href="worker.socialLinks.instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a :href="worker.socialLinks.twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a :href="worker.socialLinks.facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 </div>
               </div>
             </div>
@@ -232,14 +187,15 @@
             <p class="mt-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu in pretium molestie. Interdum et malesuada fames ac.</p>
           </div>
           <div class="pizza_show mt-50">
-            <div class="pizza_item first">
+            <div v-for="pizza in pizzas" class="pizza_item" :class="pizza.first ? 'first' : pizza.last ? 'last' : ''">
               <div class="pizza_img">
-                <img src="img/h3-product-img-1a-100x100.png" alt="Bismarck">
+                <img :src="pizza.image" :alt="pizza.name">
               </div>
-              <div class="pizza_name mt-10">Bismarck</div>
-              <div class="pizza_price mt-5"><span class="discount">$55.00</span> $30.00</div>
+              <div class="pizza_name mt-10">{{ pizza.name }}</div>
+              <div class="pizza_price mt-5"><span v-if="pizza.discount.applied" class="discount">{{ pizza.discount.oldPrice }} </span>{{ pizza.price }}</div>
             </div>
-            <div class="pizza_item">
+
+            <!-- <div class="pizza_item">
               <div class="pizza_img">
                 <img src="img/h3-product-img-2a-150x150.png" alt="Fiori di zucca">
               </div>
@@ -273,7 +229,8 @@
               </div>
               <div class="pizza_name mt-10">Campagnola</div>
               <div class="pizza_price mt-5">$50.00 - $95.00</div>
-            </div>
+            </div> -->
+
           </div>
         </section>
         <!-- fine sezione pizzas -->

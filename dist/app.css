@@ -460,6 +460,7 @@ header .hero .half_circle {
 #pizzas .pizza_show .pizza_price .discount {
   text-decoration: line-through;
   color: #a6a6a6;
+  margin-right: 8px;
 }
 
 #events {
