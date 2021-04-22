@@ -79,4 +79,13 @@
       width: 85px;
     }
   }
+
+  .signature {
+    color: $light_brown;
+    font-size: $font_small;
+    margin-top: -20px;
+    span {
+      color: $green;
+    }
+  }
 }

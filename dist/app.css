@@ -692,6 +692,14 @@ header .hero .half_circle {
 .footer_left .image_container img {
   width: 85px;
 }
+.footer_left .signature {
+  color: #b7903c;
+  font-size: 12px;
+  margin-top: -20px;
+}
+.footer_left .signature span {
+  color: #339966;
+}
 
 .circle_fixed {
   width: 40px;
