@@ -439,6 +439,7 @@ header .hero .half_circle {
   font-size: 14px;
 }
 #pizzas .pizza_show .pizza_item {
+  position: relative;
   width: 19.5%;
 }
 #pizzas .pizza_show .pizza_item.first {
@@ -449,6 +450,20 @@ header .hero .half_circle {
 }
 #pizzas .pizza_show .pizza_item img {
   width: 62%;
+}
+#pizzas .pizza_show .pizza_item .sold {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  position: absolute;
+  top: 6%;
+  right: 18%;
+  background-color: #CE2029;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 45px;
 }
 #pizzas .pizza_show .pizza_name {
   text-transform: uppercase;

@@ -190,6 +190,7 @@
             <div v-for="pizza in pizzas" class="pizza_item" :class="pizza.first ? 'first' : pizza.last ? 'last' : ''">
               <div class="pizza_img">
                 <img :src="pizza.image" :alt="pizza.name">
+                <div v-if="pizza.sold" class="sold">Sold</div>
               </div>
               <div class="pizza_name mt-10">{{ pizza.name }}</div>
               <div class="pizza_price mt-5"><span v-if="pizza.discount.applied" class="discount">{{ pizza.discount.oldPrice }} </span>{{ pizza.price }}</div>

@@ -132,7 +132,8 @@ var app = new Vue(
             oldPrice: "$55.00"
           },
           first: true,
-          last: false
+          last: false,
+          sold: false
         },
         {
           name: "Fiori di zucca",
@@ -143,7 +144,8 @@ var app = new Vue(
             oldPrice: null
           },
           first: false,
-          last: false
+          last: false,
+          sold: false
         },
         {
           name: "Valdostana",
@@ -154,7 +156,8 @@ var app = new Vue(
             oldPrice: null
           },
           first: false,
-          last: false
+          last: false,
+          sold: true
         },
         {
           name: "Pizza tartufata",
@@ -165,7 +168,8 @@ var app = new Vue(
             oldPrice: null
           },
           first: false,
-          last: false
+          last: false,
+          sold: false
         },
         {
           name: "Francescana",
@@ -176,7 +180,8 @@ var app = new Vue(
             oldPrice: null
           },
           first: false,
-          last: false
+          last: false,
+          sold: false
         },
         {
           name: "Campagnola",
@@ -187,7 +192,8 @@ var app = new Vue(
             oldPrice: null
           },
           first: false,
-          last: true
+          last: true,
+          sold: false
         },
       ]
     },
