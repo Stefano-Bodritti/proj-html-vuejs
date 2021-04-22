@@ -529,16 +529,17 @@ header .hero .half_circle {
 
 #book {
   background-image: url("../img/h3-background-img-3.jpg");
-  padding: 50px 0;
+  background-size: cover;
+  padding: 90px 0 69px;
 }
-#book form > * {
+#book form > *:not(:last-child) {
   float: left;
 }
-#book form .relative {
+#book .relative {
   position: relative;
-  width: 18%;
+  width: 21%;
 }
-#book form select, #book form .date {
+#book select, #book .date {
   width: 100%;
   padding: 20px 40px 20px 30px;
   border: 2px solid black;
@@ -547,15 +548,23 @@ header .hero .half_circle {
   -moz-appearance: none;
        appearance: none;
   outline: none;
+  cursor: pointer;
 }
-#book form i {
+#book .date {
+  padding: 19px 40px 19px 30px;
+}
+#book .date::-webkit-inner-spin-button, #book .date::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+#book i {
   color: #b7903c;
   position: absolute;
-  right: 10px;
+  right: 30px;
   top: 50%;
   transform: translateY(-50%);
 }
-#book form .text {
+#book .text {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-size: 18px;
@@ -564,6 +573,19 @@ header .hero .half_circle {
   width: 5%;
   text-align: center;
 }
+#book button {
+  float: right;
+  padding: 20px 80px 20px 80px;
+  font-family: "Oswald", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+}
+#book .powered {
+  color: #ffffff;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
 .btn_orange {
   background-color: #CE2029;
   color: white;

@@ -377,50 +377,69 @@
 
 #book {
   background-image: url("../img/h3-background-img-3.jpg");
-  padding: 50px 0;
+  background-size: cover;
+  padding: 90px 0 69px;
 
-  form {
+  form > *:not(:last-child) {
+    float: left;
+  }
 
-    & > * {
-      float: left;
-    }
+  .relative {
+    position: relative;
+    width: 21%;
+  }
 
-    .relative {
-      position: relative;
-      width: 18%;
-    }
+  select, .date {
+    width: 100%;
+    padding: 20px 40px 20px 30px;
+    border: 2px solid black;
+    color: $dark_grey;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
 
-    select, .date {
-      width: 100%;
-      padding: 20px 40px 20px 30px;
-      border: 2px solid black;
-      color: $dark_grey;
+  .date {
+    padding: 19px 40px 19px 30px;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-calendar-picker-indicator {
+      display: none;
       -webkit-appearance: none;
-      appearance: none;
-      outline: none;
     }
+  }
 
-    i {
-      color: $light_brown;
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+  i {
+    color: $light_brown;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-    .text {
-      color: $primary_white;
-      font-family: $secondary_font;
-      font-size: $font_normal;
-      font-weight: 500;
-      line-height: 60px;
-      width: 5%;
-      text-align: center;
-    }
+  .text {
+    color: $primary_white;
+    font-family: $secondary_font;
+    font-size: $font_normal;
+    font-weight: 500;
+    line-height: 60px;
+    width: 5%;
+    text-align: center;
+  }
 
-    .date {
+  button {
+    float: right;
+    padding: 20px 80px 20px 80px;
+    font-family: $secondary_font;
+    font-size: $font_small;
+    letter-spacing: $spacing_large;
+  }
 
-    }
+  .powered {
+    color: $primary_white;
+    font-size: $font_small;
+    padding-top: 5px;
   }
 
 }
