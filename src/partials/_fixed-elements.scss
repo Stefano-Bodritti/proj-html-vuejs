@@ -1,0 +1,41 @@
+.circle_fixed {
+  width: 40px;
+  height: 40px;
+  background-color: $light_grey;
+  border-radius: 50%;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  text-align: center;
+}
+
+.squadre_fixed {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+
+  &.logo {
+    background-color: $pink_bg;
+    bottom: 110px;
+    img {
+      width: 70%;
+    }
+  }
+
+  &.cart {
+    background-color: $primary_white;
+    bottom: 60px;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.circle_fixed, .squadre_fixed {
+  img {
+    width: 40%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

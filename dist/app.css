@@ -200,6 +200,7 @@ header .hero .half_circle {
 #images .image_container img {
   width: 100%;
   display: block;
+  transition: opacity 0.4s ease-in-out;
 }
 #images .image_container .cover {
   position: absolute;
@@ -213,6 +214,7 @@ header .hero .half_circle {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.4s ease-in-out;
 }
 #images .image_container .cover .orange_circle {
   width: 50px;
@@ -357,6 +359,7 @@ header .hero .half_circle {
 #workers .box img {
   width: 100%;
   display: block;
+  transition: opacity 0.4s ease-in-out;
 }
 #workers .box img:hover {
   opacity: 0;
@@ -373,6 +376,7 @@ header .hero .half_circle {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.5s ease-in-out;
 }
 #workers .box .cover:hover {
   opacity: 1;
@@ -671,4 +675,42 @@ header .hero .half_circle {
 }
 .footer_left .image_container img {
   width: 85px;
+}
+
+.circle_fixed {
+  width: 40px;
+  height: 40px;
+  background-color: #f6f7f2;
+  border-radius: 50%;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  text-align: center;
+}
+
+.squadre_fixed {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+}
+.squadre_fixed.logo {
+  background-color: #ef2853;
+  bottom: 110px;
+}
+.squadre_fixed.logo img {
+  width: 70%;
+}
+.squadre_fixed.cart {
+  background-color: #ffffff;
+  bottom: 60px;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+.circle_fixed img, .squadre_fixed img {
+  width: 40%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }

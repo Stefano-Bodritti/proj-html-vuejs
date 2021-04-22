@@ -10,10 +10,12 @@
     img {
       width: 100%;
       display: block;
+      transition: opacity .4s ease-in-out;
     }
 
     .cover {
       @include flex_hover;
+      transition: opacity .4s ease-in-out;
 
       .orange_circle {
         width: 50px;
@@ -183,6 +185,7 @@
     img {
       width: 100%;
       display: block;
+      transition: opacity .4s ease-in-out;
       &:hover {
         opacity: 0;
       }
@@ -190,6 +193,7 @@
 
     .cover {
       @include flex_hover;
+      transition: opacity .5s ease-in-out;
       &:hover {
         opacity: 1;
       }
