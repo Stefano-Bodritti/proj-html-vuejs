@@ -50,7 +50,7 @@ section {
 }
 
 .half_circle {
-  color: #d2401e;
+  color: #CE2029;
   background-color: white;
   height: 60px;
   width: 60px;
@@ -164,7 +164,7 @@ header .container .menu_right .cart_container .cart_number {
   position: absolute;
   left: -3px;
   top: -2px;
-  color: #d2401e;
+  color: #CE2029;
   font-size: 7px;
   line-height: 12px;
   padding-left: 4px;
@@ -218,7 +218,7 @@ header .hero .half_circle {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #d2401e;
+  background-color: #CE2029;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,7 +258,7 @@ header .hero .half_circle {
   font-weight: 500;
 }
 #slogan .slogan_center p {
-  color: #d2401e;
+  color: #CE2029;
   font-size: 12px;
   letter-spacing: 0.2em;
   font-weight: 500;
@@ -302,7 +302,7 @@ header .hero .half_circle {
 #specials .specials_list .cost {
   float: left;
   width: 15%;
-  color: #d2401e;
+  color: #CE2029;
   font-family: "Oswald", sans-serif;
   font-size: 25px;
   font-weight: 500;
@@ -378,7 +378,7 @@ header .hero .half_circle {
   opacity: 1;
 }
 #workers .box .cover .box_orange {
-  background-color: #d2401e;
+  background-color: #CE2029;
   width: 90%;
   height: 90%;
   text-align: center;
@@ -413,7 +413,7 @@ header .hero .half_circle {
   padding: 100px 0;
 }
 #pizzas h6 {
-  color: #d2401e;
+  color: #CE2029;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.2em;
@@ -451,7 +451,7 @@ header .hero .half_circle {
   color: #b7903c;
 }
 #pizzas .pizza_show .pizza_price {
-  color: #d2401e;
+  color: #CE2029;
 }
 #pizzas .pizza_show .pizza_price .discount {
   text-decoration: line-through;
@@ -471,7 +471,7 @@ header .hero .half_circle {
 #events .events_list .love {
   font-size: 12px;
   letter-spacing: 0.2em;
-  color: #d2401e;
+  color: #CE2029;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -490,7 +490,7 @@ header .hero .half_circle {
 }
 #events .events_list .date .day {
   font-size: 45px;
-  color: #d2401e;
+  color: #CE2029;
   font-weight: 600;
   line-height: 45px;
 }
@@ -514,7 +514,7 @@ header .hero .half_circle {
 #events .events_list .place .address {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
-  color: #d2401e;
+  color: #CE2029;
 }
 #events .events_list .place .address i {
   margin-right: 5px;
@@ -527,8 +527,45 @@ header .hero .half_circle {
   display: block;
 }
 
+#book {
+  background-image: url("../img/h3-background-img-3.jpg");
+  padding: 50px 0;
+}
+#book form > * {
+  float: left;
+}
+#book form .relative {
+  position: relative;
+  width: 18%;
+}
+#book form select, #book form .date {
+  width: 100%;
+  padding: 20px 40px 20px 30px;
+  border: 2px solid black;
+  color: #767676;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  outline: none;
+}
+#book form i {
+  color: #b7903c;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#book form .text {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 60px;
+  width: 5%;
+  text-align: center;
+}
 .btn_orange {
-  background-color: #d2401e;
+  background-color: #CE2029;
   color: white;
   padding: 12px 30px;
   cursor: pointer;
@@ -584,14 +621,14 @@ header .hero .half_circle {
   display: inline-block;
 }
 .footer_left .col_1 h6 span, .footer_left .col_2 h6 span {
-  color: #d2401e;
+  color: #CE2029;
 }
 .footer_left .col_1 .hours, .footer_left .col_2 .hours {
   color: #a6a6a6;
   font-size: 14px;
 }
 .footer_left .col_1 .hours.closed, .footer_left .col_2 .hours.closed {
-  color: #d2401e;
+  color: #CE2029;
 }
 .footer_left .col_1 a.socials, .footer_left .col_2 a.socials {
   color: #ffffff;

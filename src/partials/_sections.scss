@@ -374,3 +374,53 @@
     }
   }
 }
+
+#book {
+  background-image: url("../img/h3-background-img-3.jpg");
+  padding: 50px 0;
+
+  form {
+
+    & > * {
+      float: left;
+    }
+
+    .relative {
+      position: relative;
+      width: 18%;
+    }
+
+    select, .date {
+      width: 100%;
+      padding: 20px 40px 20px 30px;
+      border: 2px solid black;
+      color: $dark_grey;
+      -webkit-appearance: none;
+      appearance: none;
+      outline: none;
+    }
+
+    i {
+      color: $light_brown;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .text {
+      color: $primary_white;
+      font-family: $secondary_font;
+      font-size: $font_normal;
+      font-weight: 500;
+      line-height: 60px;
+      width: 5%;
+      text-align: center;
+    }
+
+    .date {
+
+    }
+  }
+
+}
